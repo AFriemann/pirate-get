@@ -5,7 +5,7 @@ if [ "$UID" -ne 0 ]
   exit
 fi
 
-TMP=$(mktemp pirate-get-XXX)
+TMP=$(mktemp pirate-get-XXXXXX)
 if [ $(which python2.7) ]
 then
     echo "#!/usr/bin/env python2.7" > "$TMP"
