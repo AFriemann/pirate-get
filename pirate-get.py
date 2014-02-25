@@ -140,7 +140,8 @@ def main():
 
         else:
             try:
-                l = raw_input("Select a link: ")
+                #l = raw_input("Select a link: ")
+                exit(0)
             except KeyboardInterrupt :
                 print "\nCancelled."
                 exit()
@@ -164,6 +165,7 @@ def main():
             print "Cancelled."
     else:
         print "no results"
+        exit(1)
 
 if __name__ == "__main__":
     main()
